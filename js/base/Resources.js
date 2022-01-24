@@ -1,0 +1,18 @@
+export const Resources = [
+  ['background_base', 'res/background_base.png'],
+  ['background_cover', 'res/background_cover.png'],
+  ['background_dark', 'res/background_dark.png'],
+  ['button_inner', 'res/button_inner.png'],
+  ['button_outer', 'res/button_outer.png'],
+  ['box01', 'res/boxes/box01.png'],
+  ['box02', 'res/boxes/box02.png'],
+  ['box03', 'res/boxes/box03.png'],
+  ['box04', 'res/boxes/box04.png'],
+  ['box05', 'res/boxes/box05.png'],
+  ['box06', 'res/boxes/box06.png'],
+  ['box07', 'res/boxes/box07.png'],
+  ['box08', 'res/boxes/box08.png'],
+  ['box09', 'res/boxes/box09.png'],
+  ['box10', 'res/boxes/box10.png'],
+  ['box11', 'res/boxes/box11.png'],
+];
