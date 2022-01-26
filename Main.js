@@ -17,10 +17,10 @@ export class Main {
     this.ctx = this.canvas.getContext('2d');
     this.dataStore = DataStore.getInstance();
     this.director = Director.getInstance();
+    this.createBackgroundMusic();
     // call factory method
     const loader = ResourceLoader.create();
     loader.onLoaded(map => this.onResourceFirstLoaded(map));
-    this.createBackgroundMusic();
   }
 
   onResourceFirstLoaded(map) {
