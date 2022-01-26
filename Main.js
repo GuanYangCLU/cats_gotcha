@@ -20,6 +20,7 @@ export class Main {
     // call factory method
     const loader = ResourceLoader.create();
     loader.onLoaded(map => this.onResourceFirstLoaded(map));
+    this.createBackgroundMusic();
   }
 
   onResourceFirstLoaded(map) {
@@ -38,7 +39,6 @@ export class Main {
   }
 
   init() {
-    this.createBackgroundMusic();
     this.director.isGameOver = false;
     this.dataStore
       .put('background', BackGround)
