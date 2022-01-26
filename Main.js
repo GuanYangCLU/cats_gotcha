@@ -29,7 +29,16 @@ export class Main {
     this.init();
   }
 
+  createBackgroundMusic() {
+    const bgm = new Audio();
+    bgm.autoplay = true;
+    bgm.loop = true;
+    bgm.src = 'audios/bgm.mp3';
+    // bgm.play();
+  }
+
   init() {
+    this.createBackgroundMusic();
     this.director.isGameOver = false;
     this.dataStore
       .put('background', BackGround)
