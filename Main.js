@@ -27,6 +27,7 @@ export class Main {
     this.dataStore.canvas = this.canvas;
     this.dataStore.ctx = this.ctx;
     this.dataStore.res = map;
+    this.bgm.play();
     this.init();
   }
 
@@ -35,6 +36,7 @@ export class Main {
     bgm.autoplay = true;
     bgm.loop = true;
     bgm.src = 'audios/bgm.mp3';
+    this.bgm = bgm;
     // bgm.play();
   }
 
