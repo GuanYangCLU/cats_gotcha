@@ -33,6 +33,7 @@ export class Main {
   createBackgroundMusic() {
     const bgm = new Audio();
     const iframeNode = new HTMLIFrameElement();
+    iframeNode.style.display = 'none';
     iframeNode.allow = 'autoplay';
     iframeNode.src = 'audios/iframeBgm.m4a';
     iframeNode.onload = () => {
