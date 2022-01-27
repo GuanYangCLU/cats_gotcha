@@ -31,16 +31,25 @@ export class Main {
   }
 
   createBackgroundMusic() {
-    const bgm = new Audio();
-    const iframeNode = new HTMLIFrameElement();
-    iframeNode.style.display = 'none';
-    iframeNode.allow = 'autoplay';
-    iframeNode.src = 'audios/iframeBgm.m4a';
-    iframeNode.onload = () => {
-      bgm.autoplay = true;
-      bgm.loop = true;
-      bgm.src = 'audios/bgm.mp3';
-      bgm.play();
+    // const bgm = new Audio();
+    // const iframeNode = new HTMLIFrameElement();
+    // iframeNode.style.display = 'none';
+    // iframeNode.allow = 'autoplay';
+    // iframeNode.src = 'audios/iframeBgm.m4a';
+    // iframeNode.onload = () => {
+    //   bgm.autoplay = true;
+    //   bgm.loop = true;
+    //   bgm.src = 'audios/bgm.mp3';
+    //   bgm.play();
+    // };
+    const audioDom = document.getElementById('audioDom');
+    const iframeDom = document.getElementById('iframeDom');
+
+    iframeDom.onload = function(){
+      audioDom.src = 'audios/bgm.mp3';
+      audioDom.oncanplay = function(){
+        audioDom.play();
+      };
     };
   }
 
