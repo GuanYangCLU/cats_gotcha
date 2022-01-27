@@ -40,6 +40,9 @@ export class Main {
     //   bgm.autoplay = true;
     //   bgm.loop = true;
     //   bgm.src = 'audios/bgm.mp3';
+    //   bgm.onload = () => {
+    //     bgm.play();
+    //   };
     //   bgm.play();
     // };
     const audioDom = document.getElementById('audioDom');
@@ -53,6 +56,14 @@ export class Main {
     //     audioDom.play();
     //   };
     // };
+
+    // const audioElement = document.createElement('audio');
+    // audioElement.setAttribute('src', 'Mogwai2009-04-29_acidjack_t16.ogg');
+    // audioDom.addEventListener("load", function() {
+    //   audioDom.play();
+    // });
+    // audioDom.load();
+
   }
 
   init() {
