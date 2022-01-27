@@ -43,14 +43,16 @@ export class Main {
     //   bgm.play();
     // };
     const audioDom = document.getElementById('audioDom');
-    const iframeDom = document.getElementById('iframeDom');
+    audioDom.play();
 
-    iframeDom.onload = function(){
-      audioDom.src = 'audios/bgm.mp3';
-      audioDom.oncanplay = function(){
-        audioDom.play();
-      };
-    };
+    // const iframeDom = document.getElementById('iframeDom');
+    //
+    // iframeDom.onload = function(){
+    //   audioDom.src = 'audios/bgm.mp3';
+    //   audioDom.oncanplay = function(){
+    //     audioDom.play();
+    //   };
+    // };
   }
 
   init() {
