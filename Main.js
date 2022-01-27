@@ -49,7 +49,8 @@ export class Main {
     // audioDom.addEventListener('canplaythrough', () => {
     //   audioDom.play();
     // }, false);
-    audioDom.play();
+    // audioDom.play();
+    this.bgm = audioDom;
 
     // const iframeDom = document.getElementById('iframeDom');
     //
@@ -87,6 +88,7 @@ export class Main {
     this.canvas.addEventListener('touchstart', e => {
       // 屏蔽js原来的事件冒泡
       e.preventDefault();
+      this.bgm.play();
       if (this.director.isGameOver) {
         this.init();
       } else {
