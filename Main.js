@@ -27,17 +27,20 @@ export class Main {
     this.dataStore.canvas = this.canvas;
     this.dataStore.ctx = this.ctx;
     this.dataStore.res = map;
-    this.bgm.play();
     this.init();
   }
 
   createBackgroundMusic() {
     const bgm = new Audio();
-    bgm.autoplay = true;
-    bgm.loop = true;
-    bgm.src = 'audios/bgm.mp3';
-    this.bgm = bgm;
-    // bgm.play();
+    const iframeNode = new HTMLIFrameElement();
+    iframeNode.allow = 'autoplay';
+    iframeNode.src = 'audios/iframeBgm.m4a';
+    iframeNode.onload = () => {
+      bgm.autoplay = true;
+      bgm.loop = true;
+      bgm.src = 'audios/bgm.mp3';
+      bgm.play();
+    };
   }
 
   init() {
