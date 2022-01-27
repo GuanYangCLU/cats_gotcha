@@ -46,10 +46,10 @@ export class Main {
     //   bgm.play();
     // };
     const audioDom = document.getElementById('audioDom');
-    audioDom.addEventListener('canplaythrough', () => {
-      audioDom.play();
-    }, false);
-    // audioDom.play();
+    // audioDom.addEventListener('canplaythrough', () => {
+    //   audioDom.play();
+    // }, false);
+    audioDom.play();
 
     // const iframeDom = document.getElementById('iframeDom');
     //
